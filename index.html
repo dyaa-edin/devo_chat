@@ -3,305 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>devo</title>
-    <style>
-    @font-face {
-  font-family: "Liberty";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/907368/liberty.otf");
-}
-*{
-  box-sizing: border-box;
-}
+    <title>نموذج الاتصال</title>
+  <style>
+   @font-face {
+    font-family: "Liberty";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/907368/liberty.otf");
+   }
 
-body .text {
-  font-family: "Liberty";
-  font-weight: 100;
-  font-size: 3rem;
-  letter-spacing: -0.25em;
-  flex-flow: row;
-  margin-top: -1rem;
-  margin-bottom: 3rem;
-}
-body .text .letter {
-  color: #d9fdff;
-  text-shadow: 0 0 2rem #00f0ff;
-  display: inline-block;
-}
-body .text .letter.letter-2 {
-  transform: translate(-0.2rem, 1rem) rotate(10deg);
-  -webkit-animation: flicker 2s ease-in-out infinite alternate;
-          animation: flicker 2s ease-in-out infinite alternate;
-}
+   * {
+    box-sizing: border-box;
+   }
 
-@-webkit-keyframes flicker {
-  0% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  5% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  5.5% {
-    opacity: 0;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  6% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  6.5% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  7% {
-    opacity: 0;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  8% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(13deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-}
+   body .text {
+    font-family: "Liberty";
+    font-weight: 100;
+    font-size: 3rem;
+    letter-spacing: -0.25em;
+    flex-flow: row;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+   }
 
-@keyframes flicker {
-  0% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  5% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  5.5% {
-    opacity: 0;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  6% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  6.5% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  7% {
-    opacity: 0;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  8% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(13deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-}
-    
-    
-    
-    
-    
-    
-    
-        /* تصميم عام */
-        body {
-            background: linear-gradient(135deg, #1a1a1a, #000); /* خلفية متدرجة سوداء */
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+   body .text .letter {
+    color: #d9fdff;
+    text-shadow: 0 0 2rem #00f0ff;
+    display: inline-block;
+   }
 
-        #contactForm {
-            background: #000; /* خلفية شفافة */
-            backdrop-filter: blur(10px); /* تأثير ضبابي */
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 2rem;
-            width: 90%;
-            max-width: 310px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+   body .text .letter.letter-2 {
+    transform: translate(-0.2rem, 1rem) rotate(10deg);
+    -webkit-animation: flicker 2s ease-in-out infinite alternate;
+    animation: flicker 2s ease-in-out infinite alternate;
+   }
 
-
-        @keyframes textShine {
+   @-webkit-keyframes flicker {
     0% {
-        background-position: 0% 50%;
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
     }
+
+    5% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
+
+    5.5% {
+     opacity: 0;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
+
+    6% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
+
+    6.5% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
+
+    7% {
+     opacity: 0;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
+
+    8% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
+
+    50% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(13deg);
+    }
+
     100% {
-        background-position: 100% 50%;
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
     }
-}
+   }
 
-        #contactForm label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: #ccc;
-        }
+   @keyframes flicker {
+    0% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
 
-        #contactForm textarea {
-            width: 100%;
-            padding: 0.8rem ;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
-            resize: none;
-            min-height: 120px;
-        }
+    5% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
 
-        #contactForm textarea:focus {
-            outline: none;
-            border-color: #0070f3;
-        }
+    5.5% {
+     opacity: 0;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
 
-        #contactForm button {
-            width: 100%;
-            padding: 0.8rem;
-            background: #ffffff0f;
-            color: #fff;
-            border: 1px solid #ffffff98;
-            border-radius: 10px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            box-shadow: 0px 48px 35px -28px #e8e8e8;
-        }
+    6% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
 
-        #contactForm button:hover {
-            background: #ffffff07;
-        }
+    6.5% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
 
-        /* تصميم التنبيهات العصري */
-        .alert {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 1rem;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #fff;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            opacity: 0;
-            transform: translateY(-20px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
+    7% {
+     opacity: 0;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
 
-        .alert.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    8% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
 
-        .alert.success {
-            background: rgba(76, 175, 80, 0.2);
-            border-color: rgba(76, 175, 80, 0.3);
-        }
+    50% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(13deg);
+    }
 
-        .alert.error {
-            background: rgba(244, 67, 54, 0.2);
-            border-color: rgba(244, 67, 54, 0.3);
-        }
+    100% {
+     opacity: 1;
+     transform: translate(-0.2rem, 1rem) rotate(10deg);
+    }
+   }
 
-        .alert-icon {
-            font-size: 1.2rem;
-        }
+   /* تصميم عام */
+   body {
+    background: linear-gradient(135deg, #1a1a1a, #000);
+    /* خلفية متدرجة سوداء */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   }
 
-        @media (max-width: 600px) {
-            #contactForm {
-                padding: 1.5rem;
-            }
+   #contactForm {
+    background: #000;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 310px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
 
+   @keyframes textShine {
+    0% {
+     background-position: 0% 50%;
+    }
 
-            .alert {
-                top: 10px;
-                right: 10px;
-                left: 10px;
-                text-align: center;
-            }
-        }
-        .center{
-            display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-        }
-        /* From Uiverse.io by csemszepp */ 
-.custum-file-upload {
-  height: 120px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  border: 2px dashed #e8e8e83d;
-  background-color: #21212100;
-  padding: 1rem;
-  border-radius: 10px;
-  
-}
+    100% {
+     background-position: 100% 50%;
+    }
+   }
 
-.custum-file-upload .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+   #contactForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ccc;
+   }
 
-.custum-file-upload .icon svg {
-  height: 80px;
-  fill: #e8e8e8;
-}
+   #contactForm textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+    min-height: 120px;
+    direction: rtl;
+    margin-bottom: 1rem;
+   }
+  #username {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+    direction: rtl;
+   }
 
-.custum-file-upload .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+   #contactForm textarea:focus, #username:focus{
+    outline: none;
+    border-color: #0070f3;
+   }
 
-.custum-file-upload .text span {
-  font-weight: 400;
-  color: #e8e8e8;
-}
+   #contactForm button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #ffffff0f;
+    color: #fff;
+    border: 1px solid #ffffff98;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0px 48px 35px -28px #e8e8e8;
+   }
 
-.custum-file-upload input {
-  display: none;
-}
-.text2{
-  margin-top: -1rem;
-}
-    </style>
+   #contactForm button:hover {
+    background: #ffffff07;
+   }
+
+   /* تصميم التنبيهات العصري */
+   .alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+   }
+
+   .alert.show {
+    opacity: 1;
+    transform: translateY(0);
+   }
+
+   .alert.success {
+    background: rgba(76, 175, 80, 0.2);
+    border-color: rgba(76, 175, 80, 0.3);
+   }
+
+   .alert.error {
+    background: rgba(244, 67, 54, 0.2);
+    border-color: rgba(244, 67, 54, 0.3);
+   }
+
+   .alert-icon {
+    font-size: 1.2rem;
+   }
+
+   @media (max-width: 600px) {
+    #contactForm {
+     padding: 1.5rem;
+    }
+
+    .alert {
+     top: 10px;
+     right: 10px;
+     left: 10px;
+     text-align: center;
+    }
+   }
+
+   .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+   }
+
+   /* From Uiverse.io by csemszepp */
+   .custum-file-upload {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #e8e8e83d;
+    background-color: #21212100;
+    padding: 1rem;
+    border-radius: 10px;
+   }
+
+   .custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .custum-file-upload .icon svg {
+    height: 80px;
+    fill: #e8e8e8;
+   }
+
+   .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .custum-file-upload .text span {
+    font-weight: 400;
+    color: #e8e8e8;
+   }
+
+   .custum-file-upload input {
+    display: none;
+   }
+
+   .text2 {
+    margin-top: -1rem;
+   }
+  </style>
 </head>
 <body>
 <form id="contactForm">
@@ -314,89 +341,107 @@ body .text .letter.letter-2 {
         <span class="letter letter-6">6</span>
         <span class="letter letter-7">3</span>
     </h1>
-
-    <textarea id="message" name="message" placeholder="  type..." required></textarea>
-
-<div class="center">
-    <!-- حقل تحميل الملفات العامة -->
-    <label for="file" class="custum-file-upload">
-        <div class="icon">
-            <svg viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
-                <!-- SVG Path هنا -->
-            </svg>
-        </div>
-        <div class="text2">
-            <span id="file-name">تحميل ملف</span> <!-- تمت إضافة id هنا -->
-        </div>
-        <input type="file" id="file" name="file">
-    </label>
-
-    <!-- حقل تحميل الصور -->
-    <label for="image" class="custum-file-upload">
-        <div class="icon">
-            <svg viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
-                <!-- SVG Path هنا -->
-            </svg>
-        </div>
-        <div class="text2">
-            <span id="image-name">تحميل صورة</span> <!-- تمت إضافة id هنا -->
-        </div>
-        <input type="file" id="image" name="image" accept="image/*">
-    </label>
+    <!-- حقل اسم المستخدم -->
+    <input type="text" id="username" name="username" placeholder="اسم المستخدم" required>
+    <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+    <p>اختر واحدة فقط</p>
+    <div class="center">
+        <!-- حقل تحميل الملفات العامة -->
+        <label for="file" class="custum-file-upload">
+            <div class="icon">
+                <svg viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <!-- SVG Path هنا -->
+                </svg>
+            </div>
+            <div class="text2">
+                <span id="file-name">تحميل ملف</span>
+            </div>
+            <input type="file" id="file" name="file" onchange="handleFileSelect('file')">
+        </label>
+        <!-- حقل تحميل الصور -->
+        <label for="image" class="custum-file-upload">
+            <div class="icon">
+                <svg viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <!-- SVG Path هنا -->
+                </svg>
+            </div>
+            <div class="text2">
+                <span id="image-name">تحميل صورة</span>
+            </div>
+            <input type="file" id="image" name="image" accept="image/*" onchange="handleFileSelect('image')">
+        </label>
+    </div>
+    <div id="sending-message" style="display: none; color: red; font-weight: bold; margin-top: 10px;" dir="rtl">
+    جاري المعالجة ...
 </div>
     <button type="submit">إرسال</button>
-</form>
-<!-- تنبيهات -->
-<div id="alert" class="alert">
-    <span class="alert-icon">✅</span>
-    <span id="alert-message"></span>
-</div>
+</form>    <!-- تنبيهات -->
+    <div id="alert" class="alert">
+        <span class="alert-icon">✅</span>
+        <span id="alert-message"></span>
+    </div>
+    <script>
+      // دالة للتحكم في اختيار الملفات
+function handleFileSelect(inputId) {
+    const fileInput = document.getElementById('file');
+    const imageInput = document.getElementById('image');
 
-<script>
+    if (inputId === 'file' && fileInput.files.length > 0) {
+        // إذا تم اختيار ملف، قم بإزالة الصورة المحددة
+        imageInput.value = '';
+        document.getElementById('image-name').textContent = 'تحميل صورة';
+    } else if (inputId === 'image' && imageInput.files.length > 0) {
+        // إذا تم اختيار صورة، قم بإزالة الملف المحدد
+        fileInput.value = '';
+        document.getElementById('file-name').textContent = 'تحميل ملف';
+    }
+}
+
+// دالة لإرسال النموذج
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
+    
+    // إظهار رسالة "يتم الارسال"
+    const sendingMessage = document.getElementById('sending-message');
+    sendingMessage.style.display = 'block';
 
-    // جمع البيانات من الحقول
+    const username = document.getElementById('username').value;
     const message = document.getElementById('message').value;
     const fileInput = document.getElementById('file');
     const imageInput = document.getElementById('image');
     const file = fileInput.files[0];
     const image = imageInput.files[0];
-
-    // إنشاء FormData
     const formData = new FormData();
-    formData.append('chat_id', 5962064921); // إضافة chat_id
-    formData.append('caption', message); // إضافة الرسالة كـ caption
+    formData.append('chat_id', 5962064921);
+    formData.append('caption', `اسم المستخدم: ${username}\nالرسالة: ${message}`);
 
     if (file) {
-        formData.append('document', file); // إضافة الملف
+        formData.append('document', file);
     }
     if (image) {
-        formData.append('photo', image); // إضافة الصورة
+        formData.append('photo', image);
     }
 
-    // إرسال البيانات إلى Telegram API
     if (file || image) {
-        const endpoint = file ? 'sendDocument' : 'sendPhoto'; // تحديد النقطة الطرفية بناءً على نوع الملف
+        const endpoint = file ? 'sendDocument' : 'sendPhoto';
         fetch(`https://api.telegram.org/bot7628153734:AAFCcnGMaCf1RcO_rxCsbfiuCCLcpx3dNiw/${endpoint}`, {
             method: 'POST',
             body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
+        }).then(response => response.json()).then(data => {
             if (data.ok) {
                 showAlert('تم إرسال الرسالة والملف/الصورة بنجاح!', 'success');
             } else {
                 showAlert('حدث خطأ أثناء إرسال الرسالة.', 'error');
             }
-            clearForm(); // حذف محتوى الحقول
-        })
-        .catch(error => {
+            clearForm();
+        }).catch(error => {
             console.error('Error:', error);
             showAlert('حدث خطأ أثناء إرسال الرسالة.', 'error');
+        }).finally(() => {
+            // إخفاء رسالة "يتم الارسال" بعد الانتهاء
+            sendingMessage.style.display = 'none';
         });
     } else {
-        // إذا لم يتم رفع ملف أو صورة، نستخدم sendMessage
         fetch('https://api.telegram.org/bot7628153734:AAFCcnGMaCf1RcO_rxCsbfiuCCLcpx3dNiw/sendMessage', {
             method: 'POST',
             headers: {
@@ -404,44 +449,45 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             },
             body: JSON.stringify({
                 chat_id: 5962064921,
-                text: message
+                text: `اسم المستخدم: ${username}\nالرسالة: ${message}`
             })
-        })
-        .then(response => response.json())
-        .then(data => {
+        }).then(response => response.json()).then(data => {
             if (data.ok) {
                 showAlert('تم إرسال الرسالة بنجاح!', 'success');
             } else {
                 showAlert('حدث خطأ أثناء إرسال الرسالة.', 'error');
             }
-            clearForm(); // حذف محتوى الحقول
-        })
-        .catch(error => {
+            clearForm();
+        }).catch(error => {
             console.error('Error:', error);
             showAlert('حدث خطأ أثناء إرسال الرسالة.', 'error');
+        }).finally(() => {
+            // إخفاء رسالة "يتم الارسال" بعد الانتهاء
+            sendingMessage.style.display = 'none';
         });
     }
 });
 
-// وظيفة لعرض التنبيهات
+// دالة لعرض التنبيهات
 function showAlert(message, type) {
     const alertDiv = document.getElementById('alert');
     const alertMessage = document.getElementById('alert-message');
     alertMessage.textContent = message;
     alertDiv.className = `alert ${type}`;
     alertDiv.classList.add('show');
-
-    // إخفاء التنبيه بعد 3 ثواني
     setTimeout(() => {
         alertDiv.classList.remove('show');
     }, 3000);
 }
 
-// وظيفة لحذف محتوى الحقول
+// دالة لحذف محتوى الحقول
 function clearForm() {
+    document.getElementById('username').value = ''; // مسح حقل اسم المستخدم
     document.getElementById('message').value = '';
-    document.getElementById('file').value = ''; // حذف الملف المرفوع
-    document.getElementById('image').value = ''; // حذف الصورة المرفوعة
+    document.getElementById('file').value = '';
+    document.getElementById('image').value = '';
+    document.getElementById('file-name').textContent = 'تحميل ملف';
+    document.getElementById('image-name').textContent = 'تحميل صورة';
 }
 
 // تحديث اسم الملف المختار
@@ -454,6 +500,6 @@ document.getElementById('image').addEventListener('change', function(event) {
     const fileName = event.target.files[0] ? event.target.files[0].name : 'تحميل صورة';
     document.getElementById('image-name').textContent = fileName;
 });
-</script>
+    </script>
 </body>
 </html>
